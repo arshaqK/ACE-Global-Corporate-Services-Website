@@ -43,7 +43,7 @@ const About = () => {
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
           }`}>
             <h2 className="text-3xl sm:text-4xl font-bold text-navy-900 mb-6">
-              About ACE Global Corporate Services
+              About Us
             </h2>
             
             <p className="text-lg text-gray-600 mb-6 leading-relaxed">

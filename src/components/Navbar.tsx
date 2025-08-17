@@ -73,7 +73,6 @@ const Navbar = () => {
           <div className="md:hidden bg-white shadow-lg">
             <div className="px-2 pt-2 pb-3 space-y-1">
               {[
-                { name: 'Introduction', id: 'hero' },
                 { name: 'About Us', id: 'about' },
                 { name: 'Services', id: 'services' },
                 { name: 'Meet the Team', id: 'team' },
