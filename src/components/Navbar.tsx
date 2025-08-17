@@ -39,7 +39,7 @@ const Navbar = () => {
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8 lg:mr-8">
               {[
-                { name: 'Introduction', id: 'hero' },
+                { name: 'About Us', id: 'about' },
                 { name: 'Services', id: 'services' },
                 { name: 'Meet the Team', id: 'team' },
                 { name: 'Contact Us', id: 'contact' }

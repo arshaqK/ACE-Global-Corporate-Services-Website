@@ -8,21 +8,16 @@ const About = () => {
   const stats = [
     {
       icon: Award,
-      number: '20+',
-      label: 'Years of Excellence'
+      number: '75+',
+      label: 'Years of Combined Excellence'
     },
     {
       icon: Users,
-      number: '500+',
-      label: 'Satisfied Clients'
+      number: '15+',
+      label: 'Industries Served'
     },
     {
       icon: TrendingUp,
-      number: '98%',
-      label: 'Success Rate'
-    },
-    {
-      icon: Shield,
       number: '100%',
       label: 'Compliance Record'
     }
@@ -73,7 +68,7 @@ const About = () => {
           <div className={`transition-all duration-1000 delay-400 ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
           }`}>
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
               {stats.map((stat, index) => (
                 <div
                   key={stat.label}
