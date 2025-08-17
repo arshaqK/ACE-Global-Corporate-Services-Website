@@ -8,11 +8,11 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="flex items-center space-x-2 mb-4 md:mb-0">
             <Building2 className="h-6 w-6" />
-            <span className="text-lg font-bold">FinanceCore</span>
+            <span className="text-lg font-bold">ACE Global Corporate Services</span>
           </div>
           
           <p className="text-gray-300 text-sm">
-            © 2025 FinanceCore. All rights reserved.
+            © 2025 ACE Global Corporate Services. All rights reserved.
           </p>
         </div>
       </div>

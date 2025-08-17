@@ -8,9 +8,9 @@ const Hero = () => {
   const [isTyping, setIsTyping] = useState(true);
 
   const sentences = [
-    'Accurate in solutions.',
-    'Credible in partnerships.',
-    'Efficient in services.'
+    'ACCURATE records.',
+    'CREDIBLE advice.',
+    'EFFICIENT processes.'
   ];
 
   useEffect(() => {
@@ -61,7 +61,7 @@ const Hero = () => {
             
             {/* Typing Animation */}
             <div className="text-xl sm:text-2xl lg:text-4xl font-semibold text-white mb-6 lg:mb-8 h-16 lg:h-20 flex items-center justify-center lg:justify-start animate-fade-in-up animation-delay-200">
-              <span>We are </span>
+              <span>We deliver </span>
               <span className="text-gold-400 ml-2">
                 {currentText}
                 <span className="animate-pulse">|</span>

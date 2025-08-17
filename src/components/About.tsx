@@ -1,5 +1,5 @@
 import React from 'react';
-import { Award, Users, TrendingUp, Shield } from 'lucide-react';
+import { Award, Users, TrendingUp, Shield, Briefcase } from 'lucide-react';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 
 const About = () => {
@@ -15,6 +15,11 @@ const About = () => {
       icon: Users,
       number: '15+',
       label: 'Industries Served'
+    },
+    {
+      icon: Briefcase,
+      number: '10+',
+      label: 'Core Services'
     },
     {
       icon: TrendingUp,
@@ -42,25 +47,32 @@ const About = () => {
             </h2>
             
             <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-              Founded with a vision to provide exceptional financial services, ACE Global Corporate Services 
-              has been a trusted partner for businesses across various industries for over two decades. 
-              Our commitment to excellence and innovation has made us a leading name in financial consulting.
+              At ACE Global Corporate Services, we bring together over 75 years of
+              combined expertise in bookkeeping, accounting, taxation, management
+              consulting, corporate governance, payroll, and complete back-office support.
             </p>
-            
+
+            <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+              Founded by two seasoned professionals with blue-chip organizational experience,
+              we exist to give businesses the confidence, clarity, and compliance they need to
+              succeed.
+            </p>
+
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              We specialize in delivering comprehensive solutions that help businesses navigate complex 
-              financial landscapes, ensure regulatory compliance, and achieve sustainable growth. Our 
-              team of certified professionals brings deep expertise and personalized attention to every client.
+              We understand that running a business is demanding. That's why we take care of
+              the numbers, compliance, and governance—so you can focus on growth,
+              innovation, and strategy. Whether you're a startup, a growing enterprise, or an
+              established corporation, we provide tailored solutions designed to reduce risk,
+              increase efficiency, and unlock long-term value.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-navy-900 hover:bg-navy-800 transition-all duration-200 transform hover:scale-105">
+              <button 
+              onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
+              className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-navy-900 hover:bg-navy-800 transition-all duration-200 transform hover:scale-105">
                 Learn More About Us
               </button>
-              
-              <button className="inline-flex items-center px-6 py-3 border border-navy-900 text-base font-medium rounded-lg text-navy-900 hover:bg-navy-900 hover:text-white transition-all duration-200">
-                Download Brochure
-              </button>
+            
             </div>
           </div>
 
@@ -68,7 +80,7 @@ const About = () => {
           <div className={`transition-all duration-1000 delay-400 ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
           }`}>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+            <div className="grid grid-cols-2 gap-6">
               {stats.map((stat, index) => (
                 <div
                   key={stat.label}
