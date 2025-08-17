@@ -17,6 +17,11 @@ const About = () => {
       label: 'Industries Served'
     },
     {
+      icon: Briefcase, 
+      number: '10+',
+      label: 'Core Services'
+    }
+    {
       icon: TrendingUp,
       number: '100%',
       label: 'Compliance Record'
