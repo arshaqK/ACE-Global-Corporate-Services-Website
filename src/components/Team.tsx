@@ -6,18 +6,18 @@ const Team = () => {
 
   const founders = [
     {
-      name: 'Sarah Johnson',
-      qualification: 'CPA, MBA Finance',
-      experience: '15+ Years',
+      name: 'JAVED MURTAZA',
+      qualification: 'MBA (US), CPA (US), FCA (UK)',
+      experience: '35+ Years',
       image: 'https://images.pexels.com/photos/3184298/pexels-photo-3184298.jpeg',
-      specialization: 'Corporate Finance & Strategy'
+      specialization: 'A professionally highly qualified former corporate executive with 35+ years of global experience in all facets of corporate operations, business modelling, financial planning & analysis, internal & external audits, international taxation, financial & managerial accounting, commercial operations and ERP implementation.'
     },
     {
-      name: 'Michael Chen',
-      qualification: 'CFA, MS Accounting',
-      experience: '18+ Years',
+      name: 'FAISAL HASNAIN',
+      qualification: 'FCA (UK)',
+      experience: '35+ Years',
       image: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg',
-      specialization: 'Tax Strategy & Compliance'
+      specialization: 'A senior finance and management professional with over 35 years\' experience in the field of management, accounting, finances, taxation and sports administration. He is a UK Chartered Accountant and has held senior positions in multinational organizations in the UK, Dubai and the USA.'
     }
   ];
 
@@ -57,12 +57,12 @@ const Team = () => {
                 <img
                   src={founder.image}
                   alt={founder.name}
-                  className="w-64 h-64 rounded-full object-cover shadow-xl mx-auto transform group-hover:scale-105 transition-transform duration-300"
+                  className="w-48 h-48 rounded-full object-cover shadow-xl mx-auto transform group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 rounded-full bg-gradient-to-t from-navy-900/20 to-transparent"></div>
               </div>
               
-              <h3 className="text-2xl font-bold text-navy-900 mb-2">
+              <h3 className="text-xl font-bold text-navy-900 mb-2">
                 {founder.name}
               </h3>
               
@@ -74,7 +74,7 @@ const Team = () => {
                 <span className="font-medium">Experience:</span> {founder.experience}
               </p>
               
-              <p className="text-navy-700 font-medium">
+              <p className="text-navy-700 text-sm leading-relaxed max-w-md mx-auto">
                 {founder.specialization}
               </p>
             </div>
