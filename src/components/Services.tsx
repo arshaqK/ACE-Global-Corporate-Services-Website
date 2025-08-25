@@ -80,7 +80,7 @@ const Services = () => {
         <div className={`text-center mb-16 transition-all duration-1000 delay-200 ${
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
         }`}>
-          <h2 className="text-3xl sm:text-4xl font-bold text-navy-900 mb-4">
+          <h2 className="text-3xl sm:text-5xl font-bold text-navy-900 mb-4">
             Our Services
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">

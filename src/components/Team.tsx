@@ -7,7 +7,7 @@ const Team = () => {
 
   const founders = [
     {
-      name: 'JAVED MURTAZA',
+      name: 'JAY MURTAZA',
       qualification: 'MBA (US), CPA (US), FCA (UK)',
       experience: '35+ Years',
       initials: 'JM',
@@ -34,7 +34,7 @@ const Team = () => {
         <div className={`text-center mb-16 transition-all duration-1000 delay-200 ${
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
         }`}>
-          <h2 className="text-3xl sm:text-4xl font-bold text-navy-900 mb-4">
+          <h2 className="text-3xl sm:text-5xl font-bold text-navy-900 mb-4">
             Meet the Team
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -104,7 +104,7 @@ const Team = () => {
                     </div>
                     <div>
                       <h4 className="font-semibold text-navy-900 mb-2">Expertise</h4>
-                      <p className="text-gray-600 text-sm leading-relaxed">
+                      <p className="text-gray-600 text-sm leading-relaxed text-justify">
                         {founder.specialization}
                       </p>
                     </div>

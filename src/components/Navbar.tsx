@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Building2 } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
@@ -22,28 +23,22 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`absolute top-0 left-0 w-full z-[9999] transition-all duration-300 
-     `}
+      className={`absolute top-0 left-0 w-full z-[9999] transition-all duration-300`}
     >
       <div className="w-full px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="flex items-center space-x-2 lg:ml-8">
-            <Building2
-              className={`h-8 w-8 ${scrolled ? 'text-navy-900' : 'text-white'}`}
+          <div className="flex items-center lg:ml-8">
+            <img
+              src="/imgs/logo.png" 
+              alt="Company Logo"
+              className="h-20 w-auto object-contain"
             />
-            <span
-              className={`text-xl font-bold ${
-                scrolled ? 'text-navy-900' : 'text-white'
-              }`}
-            >
-              ACE Global Corporate Services
-            </span>
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-8 lg:mr-8">
+            <div className="ml-10 flex items-baseline space-x-8 lg:mr-2">
               {[
                 { name: 'About Us', id: 'about' },
                 { name: 'Services', id: 'services' },
@@ -53,7 +48,7 @@ const Navbar = () => {
                 <button
                   key={item.name}
                   onClick={() => scrollToSection(item.id)}
-                  className={`px-3 py-2 text-sm font-medium transition-colors duration-200 hover:text-gold-500 ${
+                  className={`px-3 py-2 text-md font-medium transition-colors duration-200 hover:text-gold-500 ${
                     scrolled ? 'text-navy-700' : 'text-white'
                   }`}
                 >

@@ -47,7 +47,7 @@ const Contact = () => {
         <div className={`text-center mb-16 transition-all duration-1000 delay-200 ${
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
         }`}>
-          <h2 className="text-3xl sm:text-4xl font-bold text-navy-900 mb-4">
+          <h2 className="text-3xl sm:text-5xl font-bold text-navy-900 mb-4">
             Contact Us
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -77,7 +77,7 @@ const Contact = () => {
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-navy-900">Phone</h3>
-                <p className="text-gray-600">+1 (555) 123-4567</p>
+                <p className="text-gray-600">(617) 845-7728</p>
               </div>
             </div>
 
@@ -88,8 +88,8 @@ const Contact = () => {
               <div>
                 <h3 className="text-lg font-semibold text-navy-900">Office</h3>
                 <p className="text-gray-600">
-                  123 Financial District<br />
-                  New York, NY 10004
+                  28 Church St Ste 14 # 4960<br />
+                  Winchester, MA 01890
                 </p>
               </div>
             </div>

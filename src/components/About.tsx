@@ -42,23 +42,23 @@ const About = () => {
           <div className={`transition-all duration-1000 delay-200 ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
           }`}>
-            <h2 className="text-3xl sm:text-4xl font-bold text-navy-900 mb-6">
+            <h2 className="text-3xl sm:text-5xl font-bold text-navy-900 mb-6">
               About Us
             </h2>
             
-            <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+            <p className="text-lg text-gray-600 mb-6 leading-relaxed text-justify">
               At ACE Global Corporate Services, we bring together over 75 years of
               combined expertise in bookkeeping, accounting, taxation, management
               consulting, corporate governance, payroll, and complete back-office support.
             </p>
 
-            <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+            <p className="text-lg text-gray-600 mb-6 leading-relaxed text-justify">
               Founded by two seasoned professionals with blue-chip organizational experience,
               we exist to give businesses the confidence, clarity, and compliance they need to
               succeed.
             </p>
 
-            <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+            <p className="text-lg text-gray-600 mb-8 leading-relaxed text-justify">
               We understand that running a business is demanding. That's why we take care of
               the numbers, compliance, and governance—so you can focus on growth,
               innovation, and strategy. Whether you're a startup, a growing enterprise, or an
@@ -167,7 +167,7 @@ const About = () => {
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
               }`}
             >
-              <p className="text-lg text-gray-700 leading-relaxed border-t border-gold-200 pt-8">
+              <p className="text-lg text-gray-700 leading-relaxed border-t border-gold-200 pt-8 text-justify">
                 At ACE Global Corporate Services, we're not just service providers—we're your partners in growth. 
                 With accuracy, credibility, and efficiency at the core of everything we do, we empower businesses 
                 to thrive in today's complex and competitive environment.

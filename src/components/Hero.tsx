@@ -52,11 +52,11 @@ const Hero = () => {
     <section id="hero" className="relative h-screen flex items-center">
       <div className="w-full h-full flex">
         {/* Left Content - 60% */}
-        <div className="w-full lg:w-3/5 bg-navy-900 flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-16 lg:pt-0">
+        <div className="w-full lg:w-[55%] bg-navy-900 flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-16 lg:pt-0">
           <div className="max-w-2xl mx-auto text-center lg:text-left">
             <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-white mb-6 lg:mb-8 animate-fade-in-up">
-              Leading Financial
-              <span className="text-gold-400 block">Excellence</span>
+              ACE Global 
+              <span className="text-gold-400 block">Corporate Services</span>
             </h1>
             
             {/* Typing Animation */}
@@ -68,7 +68,7 @@ const Hero = () => {
               </span>
             </div>
             
-            <p className="text-base sm:text-lg lg:text-xl text-gray-200 mb-6 lg:mb-8 animate-fade-in-up animation-delay-400">
+            <p className="text-base sm:text-lg lg:text-xl text-gray-200 mb-6 lg:mb-8 animate-fade-in-up animation-delay-400 text-justify">
               From managing day-to-day finances to navigating regulatory complexities, we deliver 
               end-to-end support that empowers businesses to thrive. Our solutions are designed to 
               simplify operations, strengthen compliance, and create a solid foundation for lasting growth.
@@ -93,8 +93,8 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Right Image - 40% */}
-        <div className="hidden lg:block lg:w-2/5 relative">
+        {/* Right Image - 45% */}
+        <div className="hidden lg:block lg:w-[45%] relative">
           <div 
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
             style={{
@@ -107,7 +107,7 @@ const Hero = () => {
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-4 lg:bottom-8 left-1/2 transform -translate-x-1/2 z-10">
+      <div className="absolute hidden bottom-4 lg:bottom-8 left-1/2 transform -translate-x-1/2 z-10">
         <div className="w-6 h-10 border-2 border-white rounded-full flex justify-center">
           <div className="w-1 h-3 bg-white rounded-full animate-bounce mt-2"></div>
         </div>
