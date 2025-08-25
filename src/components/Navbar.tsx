@@ -38,7 +38,7 @@ const Navbar = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-8 lg:mr-2">
+            <div className="flex ml-10 flex items-baseline space-x-8 lg:mr-2">
               {[
                 { name: 'About Us', id: 'about' },
                 { name: 'Services', id: 'services' },
